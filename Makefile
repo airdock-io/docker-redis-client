@@ -26,11 +26,8 @@ release: tag_latest
 	@git push origin v-$(VERSION) 
 	
 debug:
-	docker run -t -i $(NAME):$(VERSION)
-
-run:
-	@echo "IPAddress =" $$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $$(docker run -d -p 6379:6379 --name redis $(NAME):$(VERSION)))
+	docker run -it --rm --link redis:redis $(NAME):$(VERSION)
 	
-run_client:
-	docker run -it --rm --link redis:redis $(NAME):$(VERSION) bash -c 'redis-cli -h redis'
+run:
+	docker run -it --rm --link redis:redis $(NAME):$(VERSION) 
 	
