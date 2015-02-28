@@ -1,15 +1,15 @@
 # REDIS Client
 
-A small Redis client based on airdock/redis which attemps to connect on a host named 'redis'
+A small Redis client based on airdock/redis which attempts to connect on a host named 'redis'
 
 > Name: airdock/redis-client
 
 ***Dependency***: airdock/redis:latest
- 
+
 
 # Usage
 
-You should have already install [Docker](https://www.docker.com/) and [Fig](http://www.fig.sh/) for more complex usage.
+You should have already install [Docker](https://www.docker.com/).
 
 Be sure to name redis server as 'redis' on client side):
 
@@ -17,10 +17,10 @@ Be sure to name redis server as 'redis' on client side):
 
 
 # Change Log
- 
+
 ## latest (current)
 
-- define a quick and dirty redis client image (airdock/redis-client)
+- define a quick  redis client image (airdock/redis-client)
 
 # Build
 
@@ -37,8 +37,8 @@ And *tasks*:
 - ***all***: alias to 'build'
 - ***clean***: remove all container which depends on this image, and remove image previously builded
 - ***build***: clean and build the current version
-- ***tag_latest***: build and tag current version with ":latest"
-- ***release***: execute tag_latest, push image onto registry, and tag git repository
+- ***tag_latest***: tag current version with ":latest"
+- ***release***: build and execute tag_latest, push image onto registry, and tag git repository
 - ***debug***: launch default command with builded image in interactive mode
 - ***run***: run image as daemon and print IP address.
 
