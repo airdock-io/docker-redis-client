@@ -21,50 +21,37 @@ Be sure to name redis server as 'redis' on client side):
 ## latest (current)
 
 - define a quick  redis client image (airdock/redis-client)
+- MIT license
 
 # Build
 
-Alternatively, you can build an image from [Dockerfile](https://github.com/airdock-io/docker-redis).
-Install "make" utility, and execute: `make build`
+- Install "make" utility, and execute: `make build`
+- Or execute: 'docker build -t airdock/redis-client:latest --rm .'
 
-In Makefile, you could retrieve this *variables*:
+See [Docker Project Tree](https://github.com/airdock-io/docker-base/wiki/Docker-Project-Tree) for more details.
 
-- NAME: declare a full image name (aka airdock/redis-client)
-- VERSION: declare image version
-
-And *tasks*:
-
-- ***all***: alias to 'build'
-- ***clean***: remove all container which depends on this image, and remove image previously builded
-- ***build***: clean and build the current version
-- ***tag_latest***: tag current version with ":latest"
-- ***release***: build and execute tag_latest, push image onto registry, and tag git repository
-- ***debug***: launch default command with builded image in interactive mode
-- ***run***: run image as daemon and print IP address.
-
-
-
-# License
+# MIT License
 
 ```
- Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
+The MIT License (MIT)
 
- Permission is hereby granted, free of charge, to any person obtaining
- a copy of this software and associated documentation files (the
- "Software"), to deal in the Software without restriction, including
- without limitation the rights to use, copy, modify, merge, publish,
- distribute, sublicense, and/or sell copies of the Software, and to
- permit persons to whom the Software is furnished to do so, subject to
- the following conditions:
+Copyright (c) 2015 Airdock.io
 
- The above copyright notice and this permission notice shall be included
- in all copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
- TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
- SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 ```
