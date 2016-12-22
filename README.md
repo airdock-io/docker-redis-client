@@ -1,4 +1,4 @@
-# REDIS Client [![](https://badge.imagelayers.io/airdock/redis:latest.svg)](https://imagelayers.io/?images=airdock/redis:latest 'Get your own badge on imagelayers.io')
+# REDIS Client [![](https://images.microbadger.com/badges/image/airdock/redis-client:latest.svg)](https://microbadger.com/images/airdock/redis-client:latest "Get your own image badge on microbadger.com")
 
 A small Redis client based on airdock/redis which attempts to connect on a host named 'redis'
 
