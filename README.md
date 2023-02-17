@@ -1,5 +1,9 @@
 # REDIS Client [![](https://images.microbadger.com/badges/image/airdock/redis-client:latest.svg)](https://microbadger.com/images/airdock/redis-client:latest "Get your own image badge on microbadger.com")
 
+> This project is no longer actively maintained.
+>
+> Back in 2017, few open source project provide docker image, etc and our jobs had a real nice goal. Now (2023), all open source community is mature, provides tools and images more than we needs. Thanks to all members for their time and effort.
+
 A small Redis client based on airdock/redis which attempts to connect on a host named 'redis'
 
 > Name: airdock/redis-client
